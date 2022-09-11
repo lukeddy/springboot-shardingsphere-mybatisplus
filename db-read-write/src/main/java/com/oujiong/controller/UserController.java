@@ -26,7 +26,7 @@ public class UserController {
      */
     @PostMapping("save-user")
     public Object saveUser() {
-        return userService.saveOne(new User("小小", "女", 3));
+        return userService.save(new User("小小", "女", 3));
     }
 
     /**

@@ -1,8 +1,10 @@
 package com.oujiong.mapper;
 
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.oujiong.entity.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -12,20 +14,7 @@ import java.util.List;
  * @author xub
  * @date 2019/10/8 下午9:23
  */
-@Mapper
-public interface UserMapper {
-
-    /**
-     * 插入一条记录
-     *
-     * @param record 实体对象
-     * @return 更新条目数
-     */
-    int insert(User record);
-
-    /**
-     * 获取所有用户
-     */
-    List<User> selectAll();
+@Repository
+public interface UserMapper extends BaseMapper<User> {
 
 }

@@ -1,5 +1,6 @@
 package com.oujiong;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author xub
  * @date 2019/10/10 下午8:53
  */
+@MapperScan("com.oujiong.mapper")
 @SpringBootApplication
 public class Application {
 

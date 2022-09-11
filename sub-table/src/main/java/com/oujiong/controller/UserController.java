@@ -44,7 +44,7 @@ public class UserController {
      */
     @PostMapping("save-user")
     public Object saveUser() {
-        return userService.insertForeach(userList);
+        return userService.saveBatch(userList);
     }
     /**
      * @Description: 获取用户列表

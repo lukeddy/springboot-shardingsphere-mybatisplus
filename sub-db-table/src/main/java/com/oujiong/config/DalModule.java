@@ -29,9 +29,9 @@ import java.util.Properties;
  * @Description: 连接数据库信息
  * @date 2019/8/19 下午12:31
  */
-@Configuration
-@ComponentScan(basePackageClasses = DalModule.class)
-@MapperScan(basePackages = "com.oujiong.mapper")
+//@Configuration
+//@ComponentScan(basePackageClasses = DalModule.class)
+//@MapperScan(basePackages = "com.oujiong.mapper")
 public class DalModule {
 
     /**
